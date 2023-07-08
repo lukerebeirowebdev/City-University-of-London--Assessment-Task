@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 #photos-container {
     width: 100%;
     height: 100%;
@@ -18,11 +27,38 @@
 
 .information-container {
     background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
     padding: 10px;
+    font-weight: 700;
     margin-bottom: 0;
     text-align: center;
     position: relative;
     z-index: 1;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: #d61726;
+    color: white;
+    font-weight: 700;
+}
+
+.logo-container {
+    display: flex;
+    width:  100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
