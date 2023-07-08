@@ -24,11 +24,16 @@
         <p><a class="btn btn-secondary btn-xlg" href="/Wireframe for project.png" role="button">CLICK TO VIEW
                 WIREFRAME</a>
     </div>
-    <div class="container">
-        <div class="photoscontainer" id="photos-container">
-            <!-- pictures are are being pulled from the pictures.js script which is utilizing the JSON placeholder API. -->
-        </div>
+    <div class="pagination">
+        <button id="prevBtn" disabled>Previous</button>
+        <button id="nextBtn">Next</button>
     </div>
+    <div id="photos"></div>
+    <!-- uncomment in js and html to see all 5000 pictures -->
+    <!-- <div class="container">
+        <div class="photoscontainer" id="photos-container">
+    <!-- </div> -->
+    <!-- </div> -->
     <script src="pictures.js">
     </script>
 </body>
