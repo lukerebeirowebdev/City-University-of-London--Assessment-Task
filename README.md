@@ -25,9 +25,7 @@ Overall, this code fetches a list of photos from a JSON API, creates image eleme
 
 # Pagination Function 
 
-The const perPage = 4; sets the number of photos to be displayed per page.
-
-The let currentPage = 1; initializes the current page number to 1.
+The const perPage = 4; sets the number of photos to be displayed per page.The let currentPage = 1; initializes the current page number to 1.
 
 The const photosContainer = document.getElementById('photos'); gets a reference to the HTML element with the ID 'photos', which will be used to display the photos.
 
@@ -37,7 +35,7 @@ The fetchData(page) function is defined to fetch data from the JSON API based on
 
 Once the response is received, the code converts it to JSON using the response.json() method. The resulting JSON data is then passed to the displayData(data) function.
 
-The displayData(data) function takes the JSON data as a parameter and generates HTML markup for each photo. It iterates over the data array using the forEach method and creates a <div> element for each photo with an <img> tag inside it. The src attribute of the <img> tag is set to the photo.url value, and the alt attribute is set to the photo.title value. The generated HTML markup is stored in the html variable.
+The displayData(data) function takes the JSON data as a parameter and generates HTML markup for each photo. It iterates over the data array using the forEach method and creates a element for each photo with an <img> tag inside it. The src attribute of the <img> tag is set to the photo.url value, and the alt attribute is set to the photo.title value. The generated HTML markup is stored in the html variable.
 
 Finally, the photosContainer.innerHTML property is set to the generated HTML markup, which replaces the content of the photosContainer element with the photos.
 
