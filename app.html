@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fetch and Display Photos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="information-container">
+        <h1>JSONPlaceholder Pictures</h1>
+        <p class="lead">Fetch and Display Photos Using Restful API</p>
+        <p>JSONPlaceholder Link</p>
+        <p><a class="btn btn-info btn-xlg" href="https://jsonplaceholder.typicode.com/" role="button">LEARN MORE</a>
+    </div>
+    <div class="container">
+        <div class="photoscontainer" id="photos-container">
+            <!-- pictures are are being pulled from the pictures.js script which is utilizing the JSONplace holder APi  -->
+        </div>
+    </div>
+    <script src="pictures.js">
+    </script>
+</body>
+
+</html>
