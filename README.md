@@ -2,7 +2,7 @@
 
 One-page application that incorporates the functionality of a RESTful API. The primary goal was to retrieve data from a JSON file through the API and seamlessly integrate it into the structure of a webpage. This involved establishing a robust connection between the application and the API, ensuring the secure and efficient retrieval of the desired data. The retrieved JSON data was then processed and transformed into a suitable format for presentation on the webpage. The layout and design of the webpage were carefully considered to provide an aesthetically pleasing and user-friendly interface that effectively showcases the fetched data. The development process encompassed various stages, including establishing the necessary API integration, implementing appropriate data retrieval mechanisms, designing and structuring the webpage layout, and finally, incorporating the retrieved data into the webpage to deliver a cohesive and engaging user experience.
 
-## Javascript Functions
+## Javascript Functions 
 
 The `fetch()` function is used to make a network request to the specified URL https://jsonplaceholder.typicode.com/photos. This URL is an example endpoint that returns a JSON array of photos.
 
@@ -23,3 +23,28 @@ It appends the img element to the container element using the `appendChild()` me
 If any error occurs during the fetching or processing of the data, the code uses the `.catch()` method to handle the error. In this case, it simply logs the error message to the console.
 
 Overall, this code fetches a list of photos from a JSON API, creates image elements for each photo, and appends them to a container on the webpage.
+
+
+# Pagination Function 
+
+The const perPage = 4; sets the number of photos to be displayed per page.
+
+The let currentPage = 1; initializes the current page number to 1.
+
+The const photosContainer = document.getElementById('photos'); gets a reference to the HTML element with the ID 'photos', which will be used to display the photos.
+
+The const prevBtn = document.getElementById('prevBtn'); and const nextBtn = document.getElementById('nextBtn'); get references to the HTML elements with the IDs 'prevBtn' and 'nextBtn', respectively. These elements are used as buttons for navigating to the previous and next pages.
+
+The fetchData(page) function is defined to fetch data from the JSON API based on the specified page number. It constructs a URL with the page parameter and the perPage constant as query parameters. It then uses the fetch function to make an HTTP GET request to the API.
+
+Once the response is received, the code converts it to JSON using the response.json() method. The resulting JSON data is then passed to the displayData(data) function.
+
+The displayData(data) function takes the JSON data as a parameter and generates HTML markup for each photo. It iterates over the data array using the forEach method and creates a <div> element for each photo with an <img> tag inside it. The src attribute of the <img> tag is set to the photo.url value, and the alt attribute is set to the photo.title value. The generated HTML markup is stored in the html variable.
+
+Finally, the photosContainer.innerHTML property is set to the generated HTML markup, which replaces the content of the photosContainer element with the photos.
+
+Event listeners are added to the previous and next buttons using the addEventListener method. When the previous button is clicked, the currentPage is decremented, and the fetchData(currentPage) function is called to fetch and display the data for the new page. The nextBtn.disabled property is set to false to enable the next button, and if the currentPage becomes 1, the prevBtn.disabled property is set to true to disable the previous button.
+
+When the next button is clicked, the currentPage is incremented, and the fetchData(currentPage) function is called to fetch and display the data for the new page. The prevBtn.disabled property is set to false to enable the previous button.
+
+Finally, the fetchData(currentPage) function is called initially to fetch and display the data for the first page.
