@@ -1,5 +1,7 @@
 # Fetch and Display Photos
 
+## HTML, CSS, Javascript, RESTFUL API, Bootstrap 5 Framework.
+
 ## Javascript Functions
 
 The `fetch()` function is used to make a network request to the specified URL https://jsonplaceholder.typicode.com/photos. This URL is an example endpoint that returns a JSON array of photos.
