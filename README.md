@@ -1,6 +1,6 @@
 # Fetch and Display Photos
 
-## Javascript Functions 
+## Javascript Functions
 
 The `fetch()` function is used to make a network request to the specified URL https://jsonplaceholder.typicode.com/photos. This URL is an example endpoint that returns a JSON array of photos.
 
@@ -22,8 +22,7 @@ If any error occurs during the fetching or processing of the data, the code uses
 
 Overall, this code fetches a list of photos from a JSON API, creates image elements for each photo, and appends them to a container on the webpage.
 
-
-# Pagination Function 
+# Pagination Function
 
 The const perPage = 4; sets the number of photos to be displayed per page.The let currentPage = 1; initializes the current page number to 1.
 
