@@ -10,55 +10,58 @@
 </head>
 
 <body>
-    <div class="logo-container">
-        <img style="width:150px" class="logo" src="City,_University_of_London_Logo.svg.png" alt="">
-    </div>
-    <div class="information-container">
-        <h1>JSONPlaceholder Pictures</h1>
-        <p class="lead">Fetch and Display Photos Using Restful API</p>
-        <p>JSONPlaceholder Link</p>
-        <p><a class="btn btn-secondary btn-xlg" href="https://jsonplaceholder.typicode.com/" role="button">LEARN
-                MORE</a>
-        <p><a class="btn btn-secondary btn-xlg" href="/Wireframe for project.png" role="button">CLICK TO VIEW
-                WIREFRAME</a>
-    </div>
-    <div class="pagination">
-        <button class="btn btn-secondary btn-xlg" id="prevBtn" disabled>Previous</button>
-        <button class="btn btn-secondary btn-xlg" id="nextBtn">Next</button>
-    </div>
-    <div id="photos">
-        
-    </div>
-    <section class="bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="div col-md-8 text-center">
-                    <p class="text-muted my-4"> See what the happy button does!
-                    </p>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#happy-modal">HAPPY
-                        BUTTON!</button>
+    <div class="container">
+        <div class="logo-container">
+            <img style="width:150px" class="logo" src="City,_University_of_London_Logo.svg.png" alt="">
+        </div>
+        <div class="information-container">
+            <h1>JSONPlaceholder Pictures</h1>
+            <p class="lead">Fetch and Display Photos Using Restful API</p>
+            <p>JSONPlaceholder Link</p>
+            <p><a class="btn btn-secondary btn-xlg" href="https://jsonplaceholder.typicode.com/" role="button">LEARN
+                    MORE</a>
+            <p><a class="btn btn-secondary btn-xlg" href="/Wireframe for project.png" role="button">CLICK TO VIEW
+                    WIREFRAME</a>
+        </div>
+        <div class="pagination">
+            <button class="btn btn-secondary btn-xlg" id="prevBtn" disabled>Previous</button>
+            <button class="btn btn-secondary btn-xlg" id="nextBtn">Next</button>
+        </div>
+        <div id="photos">
+
+        </div>
+        <section class="bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="div col-md-8 text-center">
+                        <p class="text-muted my-4"> See what the happy button does!
+                        </p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#happy-modal">HAPPY
+                            BUTTON!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" id="happy-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+                        <h3 class="modal-title" id="modal-title"> Thank you for viewing my task.</h3>
+                        <p>Take a look at my portfolio to view more of my work.</p>
+                        <a href="https://lukerebeiroportfolio.netlify.app/">Portfolio Link</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <div class="modal fade" id="happy-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-body">
-                    <h3 class="modal-title" id="modal-title"> Thank you for viewing my task.</h3>
-                    <p>Take a look at my portfolio to view more of my work.</p>
-                    <a href="https://lukerebeiroportfolio.netlify.app/">Portfolio Link</a>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
     <footer>
         <div class="footer-container">
             <h3>Created by Luke Rebeiro</h3>
         </div>
     </footer>
+    </div>
+
     <!-- uncomment the js and html to see all 5000 pictures -->
     <!-- <div class="container">
         <div class="photoscontainer" id="photos-container">

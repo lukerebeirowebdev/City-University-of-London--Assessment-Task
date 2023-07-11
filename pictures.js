@@ -23,7 +23,7 @@
 //     });
 
 // Pagination
-const perPage = 3;
+const perPage = 4;
 let currentPage = 1;
 const photosContainer = document.getElementById('photos');
 const prevBtn = document.getElementById('prevBtn');
